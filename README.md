@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# 📔 TodoList-DnD App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://todo.jacobko.info/" target="_blank">Live Demo</a>
 
-## Available Scripts
+![Animation1](https://user-images.githubusercontent.com/28912774/130744544-a6e5951b-d804-4de4-921e-34295ab82961.gif)
 
-In the project directory, you can run:
+## 💻 1.프로젝트 소개
 
-### `yarn start`
+### 📝 사용기술 및 언어
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Create React App with TypeScript
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- MaterialUI
 
-### `yarn test`
+- Firebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Google Dictionary AIP
 
-### `yarn build`
+- Sass
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- PWA
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- axios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ⏰ 개발 기간
 
-### `yarn eject`
+2021-08-09 ~ 2021-08-13
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📃 2.프로젝트 내용
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📌 주요 기능
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 🎁 설치 패키지
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# CRA
+npx create-react-app PROJECT --template typescript
 
-## Learn More
+# node-sass
+yarn add node-sass@4.14.1
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# material-ui
+yarn add @material-ui/core @material-ui/icons
+yarn add @material-ui/icons
+
+# axios
+yarn add axios
+
+# CRACO
+yarn add @craco/craco
+yarn add craco-alias -D
+
+# react-router-dom
+yarn add react-router-dom
+yarn add  @types/react-router-dom --save-dev
+
+
+# firebase
+```
+
+## 🔎 3.주요 코드
+
+1. axios type 지정하기
+
+2.
+
+## 💡 4. Reference
+
+RoadsideCoder - [https://www.youtube.com/watch?v=Nz6Q21ypzT4&t=310s](https://www.youtube.com/watch?v=Nz6Q21ypzT4&t=310s)
+
+Material UI - [https://material-ui.com/](https://material-ui.com/)
+
+Free Dictionary API - [https://github.com/meetDeveloper/freeDictionaryAPI](https://github.com/meetDeveloper/freeDictionaryAPI)
+
+<!-- TODO -->
+
+https://youtu.be/Nz6Q21ypzT4?t=3628

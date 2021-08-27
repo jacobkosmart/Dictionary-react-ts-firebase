@@ -1,0 +1,35 @@
+@import "media-queries";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 25vw;
+  width: 100%;
+
+  @include tablet {
+    height: 25vw;
+  }
+
+  .title {
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: "Noto Sans KR", sans-serif;
+
+    @include mobile {
+      font-size: 10vw;
+    }
+  }
+
+  .inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .search,
+    .select {
+      width: 43%;
+    }
+  }
+}
