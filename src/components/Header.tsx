@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({
             <TextField
               className="search"
               id="standard-basic"
-              label="찾는 단어를 입력하세요"
+              label="단어 찾기"
               value={word}
               onChange={(e) => setWord(e.target.value)}
             />

@@ -1,10 +1,11 @@
 import { Container, Switch, withStyles } from "@material-ui/core";
 import axios, { AxiosResponse } from "axios";
 import React, { useEffect, useState } from "react";
-import { AuthForm, Definitions, Header } from "components/index";
+import { Definitions, Header } from "components/index";
 import "styles/App.scss";
 import { InitApi } from "components/interfaces";
 import { grey } from "@material-ui/core/colors";
+import { AiFillGithub, AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 
 const App: React.FC = () => {
   // State
@@ -12,6 +13,7 @@ const App: React.FC = () => {
   const [fetchmeanings, setFetchMeanings] = useState<InitApi[]>([]);
   const [category, setCategory] = useState<string>("en");
   const [lightMode, setLightMode] = useState<boolean>(false);
+  const [savedDef, setSavedDef] = useState<string[]>([]);
 
   // fetch from free dic API
   const dictonaryApi = async () => {
@@ -24,7 +26,6 @@ const App: React.FC = () => {
       console.log(error);
     }
   };
-  console.log(fetchmeanings);
 
   // darkMode switch
   const DarkMode = withStyles({
@@ -51,9 +52,12 @@ const App: React.FC = () => {
       <div
         className="App"
         style={{
-          backgroundColor: lightMode ? "#fff" : "#282c34",
+          backgroundColor: lightMode ? "#b8c6db" : "#000000",
+          backgroundImage: lightMode
+            ? "linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%)"
+            : "linear-gradient(147deg, #000000 0%, #434343 74%)",
           color: lightMode ? "#000" : "#fff",
-          transition: "all 0.5s linear",
+          transition: "all 0.7s linear",
         }}
       >
         <Container className="container" maxWidth="md">
@@ -62,7 +66,7 @@ const App: React.FC = () => {
               checked={lightMode}
               onChange={() => setLightMode(!lightMode)}
             />
-            <span>{lightMode ? "Dark" : "Light"} Mode</span>
+            <span className="span">{lightMode ? "Dark" : "Light"} Mode</span>
           </div>
           <Header
             category={category}
@@ -79,6 +83,44 @@ const App: React.FC = () => {
               lightMode={lightMode}
             />
           )}
+          <div className="footer">
+            <footer className="footer__text">
+              &copy; {new Date().getFullYear()} Jacob Ko
+            </footer>
+            <div className="footer__logo">
+              <a
+                href="https://jacobko.info/"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: lightMode ? "#000" : "#fff",
+                  transition: "all 0.7s linear",
+                }}
+              >
+                <AiOutlineHome />
+              </a>
+              <a
+                href="https://github.com/jacobkosmart"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: lightMode ? "#000" : "#fff",
+                  transition: "all 0.7s linear",
+                }}
+              >
+                <AiFillGithub />
+                <a
+                  href="mailto: jacobkosmart@gmail.com"
+                  style={{
+                    color: lightMode ? "#000" : "#fff",
+                    transition: "all 0.7s linear",
+                  }}
+                >
+                  <AiOutlineMail />
+                </a>
+              </a>
+            </div>
+          </div>
         </Container>
       </div>
     </>

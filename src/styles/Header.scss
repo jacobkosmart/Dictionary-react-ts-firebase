@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 25vw;
+  height: 20vw;
   width: 100%;
 
   @include tablet {
@@ -13,12 +13,12 @@
   }
 
   .title {
-    font-size: 7vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-family: "Noto Sans KR", sans-serif;
 
     @include mobile {
-      font-size: 10vw;
+      font-size: 15vw;
     }
   }
 
@@ -30,6 +30,10 @@
     .search,
     .select {
       width: 43%;
+
+      @include mobile {
+        font-size: 15px;
+      }
     }
   }
 }

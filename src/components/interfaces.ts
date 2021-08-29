@@ -1,13 +1,3 @@
-export interface HomeProps {
-  word: string;
-  setWord: React.Dispatch<React.SetStateAction<string>>;
-  category: string;
-  setCategory: React.Dispatch<React.SetStateAction<string>>;
-  lightMode: boolean;
-  fetchmeanings: InitApi[];
-  phonetics?: Phonetics[];
-}
-
 export interface HeaderProps {
   word: string;
   setWord: React.Dispatch<React.SetStateAction<string>>;
