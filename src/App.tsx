@@ -100,7 +100,7 @@ const App: React.FC = () => {
                 <AiOutlineHome />
               </a>
               <a
-                href="https://github.com/jacobkosmart"
+                href="https://github.com/jacobkosmart/dictionary-react-ts-material_ui"
                 target="_blank"
                 rel="noreferrer"
                 style={{
