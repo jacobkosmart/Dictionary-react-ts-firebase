@@ -13,7 +13,6 @@ const App: React.FC = () => {
   const [fetchmeanings, setFetchMeanings] = useState<InitApi[]>([]);
   const [category, setCategory] = useState<string>("en");
   const [lightMode, setLightMode] = useState<boolean>(false);
-  const [savedDef, setSavedDef] = useState<string[]>([]);
 
   // fetch from free dic API
   const dictonaryApi = async () => {
