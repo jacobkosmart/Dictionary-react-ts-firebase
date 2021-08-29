@@ -66,7 +66,7 @@ const App: React.FC = () => {
               checked={lightMode}
               onChange={() => setLightMode(!lightMode)}
             />
-            <span className="span">{lightMode ? "Dark" : "Light"} Mode!</span>
+            <span className="span">{lightMode ? "Dark" : "Light"} Mode</span>
           </div>
           <Header
             category={category}
