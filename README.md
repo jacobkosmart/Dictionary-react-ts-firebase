@@ -2,6 +2,8 @@
 
 <a href="https://dic.jacobko.info/" target="_blank">Live Demo</a>
 
+![Animation2](https://user-images.githubusercontent.com/28912774/131269977-3e227840-34c2-4f3b-8004-aba1d3ad7065.gif)
+
 ## 💻 1.프로젝트 소개
 
 ### 📝 사용기술 및 언어
@@ -16,8 +18,6 @@
 
 - axios
 
-- PWA
-
 ### ⏰ 개발 기간
 
 2021-08-23 ~ 2021-08-29
@@ -26,7 +26,15 @@
 
 ### 📌 주요 기능
 
-### 🎁 설치 패키지
+- 단어의 뜻, 예시, 동의어, 발음사운드 (Only English) 를 검색할 수 있는 사전 App
+
+- 12 개의 언어 검색가능
+
+- Dark / Light mode 지원
+
+- Fully responsive web design
+
+#### 🎁 설치 패키지
 
 ```bash
 # CRA
