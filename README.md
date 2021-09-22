@@ -1,4 +1,4 @@
-# 🔎 Jacob Dictonary App
+# 🔎 Jacob Dictionary App
 
 <a href="https://dic.jacobko.info/" target="_blank">Live Demo</a>
 
